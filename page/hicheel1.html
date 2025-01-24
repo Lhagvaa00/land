@@ -24,7 +24,7 @@
     .col:hover{
         background-color: rgb(216, 193, 164);
         height: 300px;
-        box-shadow: 10px 10px 5px gray;
+        box-shadow: 10px 10px 5px rgb(4, 211, 248);
     }
     .hide{
         display: block;
@@ -45,6 +45,23 @@
         box-shadow: 8px 8px 10px gray;
         
     }
+    body{
+        background-image: url(yy.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .p{
+        font-family:monospace ;
+        padding-top: 150px;
+        color: white;
+        font-size: xx-large;
+        display: none;
+        transition: all 0.3s ease-in-out;
+    }
+    .col:hover p{
+        display: block;
+        transition: all 0.3s ease-in-out;
+    }
 </style>
 <script>
     function myfuction(){
@@ -55,10 +72,7 @@
         
     }
     function darkMode(){
-        document.getElementById('home').style.backgroundColor = "black";
-        document.getElementById('about').style.backgroundColor = "black";
-        document.getElementById('content').style.backgroundColor = "black";
-        document.getElementById('contact').style.backgroundColor = "black";
+        
         document.getElementById('home').style.color = "white";
         document.getElementById('about').style.color = "white";
         document.getElementById('content').style.color = "white";
@@ -137,20 +151,24 @@
 
     <div id="contact" style="height: 500px;padding:50px;">
         <div>
-            <h1><p style="text-align: left;">zurag:</p></h1>
+            <h1><p style="margin-left:125px">zurag:</p></h1>
         </div>
         <div class="container text-center">
             <div class="row">
               <div class="col" style="background-image: url(an.jfif); background-repeat:no-repeat;background-size: cover;">
-                <p>
-                    Зохиолч:Кишимото Масаши:  Кишимото Масаши нь Японы манга зураач юм. Кишимото Масаши нь 1974 оны 11 сарын 8-нд Окаяма муж, Кацүта-гүн, Наги-чо гэх газарт төрсөн. Түүний зохиосон хамгийн алдартай манга цуврал нь Нарүто манга бөгөөд 1999 оноос Шоонэн Жамп сэтгүүлд хэвлэгдэн гарсан юм.
+                <p class="p">
+                    Nezuko
                 </p>
               </div>
               <div class="col" style="background-image: url(an1.jfif); background-repeat:no-repeat;background-size: cover;">
-                
+                <p class="p">
+                    Naruto | Author/artist Masashi Kishimoto was born in 1974 in rural Okayama Prefecture, Japan. After spending time in art college, he won the Hop Step Award for new manga artists with his manga Karakuri (Mechanism). 
+                </p>
               </div>
               <div class="col" style="background-image: url(an2.jfif); background-repeat:no-repeat;background-size: cover;">
-                
+                <p class="p">
+                    Nezuko
+                </p>
               </div>
             </div>
             <div>
