@@ -48,7 +48,9 @@
     body{
         background-image: url(yy.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100%;
+        background-attachment: fixed;
+        color: white;
     }
     .p{
         font-family:monospace ;
@@ -72,7 +74,10 @@
         
     }
     function darkMode(){
-        
+        document.getElementById('home').style.backgroundColor = "black";
+        document.getElementById('about').style.backgroundColor = "black";
+        document.getElementById('content').style.backgroundColor = "black";
+        document.getElementById('contact').style.backgroundColor = "black";
         document.getElementById('home').style.color = "white";
         document.getElementById('about').style.color = "white";
         document.getElementById('content').style.color = "white";
@@ -90,7 +95,7 @@
     }
 </script>
 <body>
-    <header class="d-flex position-fixed justify-content-around bg-warning-subtle w-100">
+    <header class="d-flex position-fixed justify-content-around bg-warning-subtle w-100" style="border-radius: 90px;">
         <a href="#"><p>Home</p></a>
         <a href="#about"><p>About</p></a>
         <a href="#content"><p>Content</p></a>
