@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #f9f9f9;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+}
+
+.logo {
+    font-size: 2em;
+    color: #bb1a05fa;
+    pointer-events: none;
+    margin-right: 440px;
+}
+
+.naviggation a {
+    text-decoration: none;
+    color: #353535;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+    
+   
+}
+
+.naviggation a:hover
+ {
+    background: #bb1a05fa;
+    color: #fff;
+
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text {
+    position: absolute;
+    font-size: 5em;
+    color: #333;
+}
+
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.sec {
+    position: relative;
+    background: #bb1a05fa;
+    padding: 100px;
+    
+}
+
+.sec h2 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+    
+}
+
+.sec p {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+.col{
+    height: 200px;
+    border-radius: 20px;
+    background-color: rgb(241, 199, 144);
+    border: 1px solid green;
+    margin: 10px;
+    
+    transition: all 0.5s ease-in-out;
+}
+.col:hover{
+    background-color: rgb(216, 193, 164);
+    height: 300px;
+    box-shadow: 10px 10px 5px rgb(4, 211, 248);
+}
+.hide{
+    display: block;
+}
+.col:hover .hide{
+    display: block;
+}
+.button{
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: aqua;
+    border-radius: 15px;
+    height: 50px;
+    width: 80px;
+    transition: all 0.3s ease-in-out;
+}
+.button:hover{
+    box-shadow: 8px 8px 10px gray;
+    
+}
+body{
+    background-image: url(yy.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    color: white;
+}
+.p{
+    font-family:monospace ;
+    padding-top: 150px;
+    color: white;
+    display: none;
+    transition: all 0.3s ease-in-out;
+
+}
+.col:hover p{
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
